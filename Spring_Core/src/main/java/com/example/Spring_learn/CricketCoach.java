@@ -1,6 +1,6 @@
 package com.example.Spring_learn;
 
-public class CricketCoach {
+public class CricketCoach implements Coach {
 
 	public String getDailyWorkout()
 	{
