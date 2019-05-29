@@ -67,8 +67,3 @@ public class Customer {
 	}
 		
 }
-
-
-
-
-
