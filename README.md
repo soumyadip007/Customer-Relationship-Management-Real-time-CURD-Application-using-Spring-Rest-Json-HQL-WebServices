@@ -1,1 +1,1 @@
-# Web-Dev-Framework-with-Spring-Boot-ORM-Core-MVC-Security-Hibernat-Rest-API-Thymeleaf
+# Customer-Relationship-Management-Real-time-CURD-Application-using-Spring-Rest-Json-WebServices
