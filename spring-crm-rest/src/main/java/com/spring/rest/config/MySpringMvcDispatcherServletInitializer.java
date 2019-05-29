@@ -1,4 +1,4 @@
-package com.luv2code.springdemo.config;
+package com.spring.rest.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
