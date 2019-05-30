@@ -27,11 +27,11 @@ public class CustomerRestService {
 		return customerService.getCustomers();
 	}
 	
-	@GetMapping("/customerId")
-	public Customer customerId(@PathVariable int id)
+	@GetMapping("/customers/{customerId}")
+	public Customer customerId(@PathVariable int customerId)
 	{
 		
-		Customer obj=customerService.getCustomer(id);
+		Customer obj=customerService.getCustomer(customerId);
 		
 		return obj;
 	}
