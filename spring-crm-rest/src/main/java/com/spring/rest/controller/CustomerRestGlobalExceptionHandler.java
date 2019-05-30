@@ -11,7 +11,7 @@ public class CustomerRestGlobalExceptionHandler {
 	//Add exception Handeler
 	
 	@ExceptionHandler
-	public ResponseEntity<CustomerErrorResponse> handleException(StudentNotFoundException	 exe)
+	public ResponseEntity<CustomerErrorResponse> handleException(CustomerNotFoundException	 exe)
 	{
 		//Create a 	StudentErrorResponse
 		CustomerErrorResponse error=new CustomerErrorResponse();

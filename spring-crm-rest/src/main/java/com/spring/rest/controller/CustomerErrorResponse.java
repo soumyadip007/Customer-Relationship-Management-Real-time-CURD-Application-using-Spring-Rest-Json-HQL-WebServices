@@ -28,6 +28,13 @@ public class CustomerErrorResponse {
 	public void setTimeStamp(long timeStamp) {
 		this.timeStamp = timeStamp;
 	}
+
+	public CustomerErrorResponse(int status, String message, long timeStamp) {
+		super();
+		this.status = status;
+		this.message = message;
+		this.timeStamp = timeStamp;
+	}
 	
 	
 }
