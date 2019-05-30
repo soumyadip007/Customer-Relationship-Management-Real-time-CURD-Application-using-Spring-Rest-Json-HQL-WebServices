@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -42,5 +44,16 @@ public class CustomerRestService {
 		return obj;
 	}
 	
+	//Add mapping for POST/Customer - add new customer
 	
+	@PostMapping("/customers")
+	public Customer addCustomer(@RequestBody Customer customer)
+	{
+		
+		customer.setId(0); //if id is 0,then DAO will "Insert" new customer
+		
+		customerService.saveCustomer(customer);
+		 
+		return customer;
+	}
 }
