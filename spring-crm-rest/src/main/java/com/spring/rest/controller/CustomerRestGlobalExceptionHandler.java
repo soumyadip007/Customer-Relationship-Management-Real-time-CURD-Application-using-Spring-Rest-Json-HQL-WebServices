@@ -13,7 +13,7 @@ public class CustomerRestGlobalExceptionHandler {
 	@ExceptionHandler
 	public ResponseEntity<CustomerErrorResponse> handleException(CustomerNotFoundException	 exe)
 	{
-		//Create a 	StudentErrorResponse
+		//Create a 	CustomerErrorResponse
 		CustomerErrorResponse error=new CustomerErrorResponse();
 		
 		error.setStatus(HttpStatus.NOT_FOUND.value());
