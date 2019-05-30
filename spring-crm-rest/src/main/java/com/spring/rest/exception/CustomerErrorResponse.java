@@ -1,4 +1,4 @@
-package com.spring.rest.controller;
+package com.spring.rest.exception;
 
 public class CustomerErrorResponse {
 

@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.spring.rest.entity.Customer;
+import com.spring.rest.exception.CustomerNotFoundException;
 import com.spring.rest.service.CustomerService;
 
 @RestController
