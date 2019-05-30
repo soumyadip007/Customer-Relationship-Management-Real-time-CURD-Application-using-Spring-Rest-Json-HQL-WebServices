@@ -33,6 +33,11 @@ public class CustomerRestService {
 		
 		Customer obj=customerService.getCustomer(customerId);
 		
+		if(obj==null)
+		{
+			throw new CustomerNotFoundException("Customer ID not found -"+customerId);
+		}
+		
 		return obj;
 	}
 	
